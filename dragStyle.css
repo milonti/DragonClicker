@@ -1,0 +1,202 @@
+/*
+Color scheme in thought:
+ <!- http://colorschemedesigner.com/#0841WsYpEF3yK ->
+*/
+
+.dragonTitle{
+	font-family:'Imprint MT Shadow';
+	font-size:2.5em;
+	text-decoration:underline;
+}
+
+div.resButton{
+	color:#000000;
+	background:#FF4100;
+	width:12em;
+	height:2em;
+	line-height:2em;
+	font-weight:bold;
+	text-align:center;
+	border-style:solid;
+	border-color:#A32A00;
+	border-width:.2em;
+	cursor: default;
+	
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;          
+}
+
+div.resButton:hover{
+    border-color: #721D00;
+}
+div.resButton:active{
+	background-color: #CC3400;
+}
+
+
+table.resourceTable {
+	font-size:100%;
+	float:left;
+}
+table.resourceTable td{
+	border-style:solid;
+	border-color:#FFFFFF;
+	border-width:0.2em 0px;
+}
+table.resourceTable td:not([class]) {
+	font-weight:bold;
+	background:#CC7600;
+	text-align:left;
+	width:5em;
+	height:2em;
+	vertical-align:middle;
+}
+table.resourceTable td.resCount {
+	font-weight:bold;
+	color:#000000;
+	background:#FF9400;
+	text-align:right;
+	width:8em;
+	padding-right:.2em;
+}
+
+.resourceHeader {
+	width:10em;
+	font-size:110%;
+	text-align:center;
+	font-weight:bolder;
+}
+
+#debugTable {
+	position:absolute;
+	top:8%;
+	right:1%;
+}
+
+table.options{
+	position:absolute;
+	top:80%;
+	right:1%
+}
+div.options{
+	border-style:solid;
+	border-color:#505050;
+	border-width:.2em;
+	width:10em;
+	background:#CCCCCC;
+	text-align:center;
+	vertical-align:middle;
+	
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none; 
+}
+div.options:hover{
+    border-color: #202020;
+}
+div.options:active{
+	background-color: #999999;
+}
+.tabMenu{
+	display:table-cell;
+	border-style:ridge;
+	border-width:.2em;
+	border-color:#4A9BC6;
+	width:9em;	
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	cursor: default;
+}
+.tabMenu:hover{
+	text-decoration:underline;
+}
+.tabSelected{
+	border-bottom:none;
+}
+.tabPane{
+	border-style:solid;
+	border-width:.2em;
+	border-color:#4A9BC6;
+	border-top:none;
+	list-style-type: none;
+	width:46.5em;
+	height: 15em;
+	overflow: auto;
+}
+.tabHidden{
+	display:none;
+}
+
+.buildButton{
+	border-style:solid;
+	border-color:#505050;
+	border-width:.2em;
+	width:10em;
+	background:#CCCCCC;
+	text-align:center;
+	vertical-align:middle;
+	list-style-type:none;
+	
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none; 
+}
+.buildButton:hover{
+    border-color: #202020;
+}
+.buildButton:active{
+	background-color: #999999;
+}
+
+.floatSection{
+	clear:left;
+}
+
+#buildingListDiv{
+	float:left;
+	border-style: solid;
+	border-color: #CC7813;
+	border-width: .3em;
+	margin-top: .9em;
+}
+#eventLogDiv{
+	border-style: solid;
+	border-color: #CC7813;
+	border-width: .3em;
+	border-left: 0;
+	float: left;
+	margin-top: .9em;
+}
+
+#buildingList{
+	overflow:auto;
+	padding-left: .15em;
+	margin: 0;
+	margin-top: .5em;
+	width:21.8em;
+	height:8em;
+}
+
+#eventList{
+	list-style: none;
+	padding-left: .15em;
+	margin: 0;
+	margin-top: .5em;
+	overflow:auto;
+	width:24em;
+	height:8em;
+}
