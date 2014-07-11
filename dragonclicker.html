@@ -1,0 +1,160 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<title>Dragon Clicker Prototype</title>
+	<LINK href="dragStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="dragonTitle">The 
+		<span id='dragonAgeColorSize'>Young Wyrmling</span> 
+		<span id='dragonName'>Milonti</span>
+	</div>
+	
+	<div class="resourceHeader" >Dragon Statistics</div>
+	
+	<div >
+	<table class='resourceTable'>
+		<tr >
+			<td>Strength:</td>
+			<td class='resCount'><span id='currStr'>0</span></td>
+			<td>Influence:</td>
+			<td class='resCount'><span id='currInf'>0</span></td>
+		</tr>
+		<tr >
+			<td>Fodder:</td>
+			<td class='resCount'><span id='currFodder'>0</span></td>
+			<td>Breeding Stock:</td>
+			<td class='resCount'><span id='breeders'>0</span></td>
+		</tr>
+		<tr >
+			<td>Total Gold: </td>
+			<td class='resCount'><span id='currGold'>0</span></td>
+			<td>Hoard Size:</td>
+			<td class='resCount'><span id='hoardGold'>0</span></td>
+		</tr>
+	</table>
+	</div>
+	
+	<table id='resources' class='resTable'>
+		<tr>
+			<th>Strength</th>
+			<td>
+				<div class="resButton" onclick="eatFodder(1)">Eat Fodder</div>
+			</td>
+			<td>
+				<div class="resButton" onclick="eatFodder(5)">Eat Fodder x5</div>
+			</td>
+			<td>
+				<div class="resButton" onclick="eatFodder(10)">Eat Fodder x10</div>
+			</td>
+		</tr>
+		<tr>
+			<th>Fodder</th>
+			<td>
+				<div class="resButton" onclick="clickFodder()">Gather Fodder</div>
+			</td>
+			<td>
+				<div class="resButton" onclick="clickBreed()">Buy Breeding Stock</div>
+			</td>
+			<td>
+				
+			</td>
+		</tr>
+		<tr>
+			<th>Gold</th>
+			<td>
+				<div class="resButton" onclick="clickGold()">Steal Gold</div>
+			</td>
+			<td>
+				<div class="resButton" onclick="clickHoard()">Add to Hoard</div>
+			</td>
+			<td>
+				
+			</td>
+		</tr>
+	</table>
+	
+	<table id='debugTable'>
+		<tr ><td>
+			<div class="resButton" onclick="eatFodder(10000)">Debug Fod -> Str</div>
+		</td></tr>
+		<tr><td>
+			<div class="resButton" onclick="gatherFodder('cheat')">Debug Fodder</div>
+		</td></tr>
+		<tr><td>
+			<div class="resButton" onclick="addGold(10000)">Debug Gold (10,000)</div>
+		</td></tr>
+		<tr><td>
+			<div class="resButton" onclick="goldToHoard(10000)">Increase Hoard</div>
+		</td></tr>
+		<tr><td>
+			<div class="resButton" onclick="updateBuildingList()">Debug Building List</div>
+		</td></tr>
+	</table>
+	
+	<div id='tabs' style="clear:both">
+		  <div id='selectBuild' class='tabMenu tabSelected' onclick="selectPane('buildings')" >Buildings</div><!-
+		-><div id='selectUpgra' class='tabMenu' onclick="selectPane('upgrades')" >Upgrades</div><!-
+		-><div id='selectPhysi' class='tabMenu' onclick="selectPane('physical')" >Physical Growth</div><!-
+		-><div id='selectArcan' class='tabMenu' onclick="selectPane('arcane')" >Arcane Arts</div><!-
+		-><div id='selectEmpir' class='tabMenu' onclick="selectPane('empire')" >Empire Upgrades</div>
+	</div>
+	
+	<div id='buildPane' class='tabPane'>
+		<ul id='buildPaneCol1'>
+		
+		</ul>
+		<ul id='buildPaneCol2'>
+		
+		</ul>
+	</div>
+	
+	<div id='upgradePane' class='tabHidden'>
+		<ul id='upgradePaneCol1'>
+		
+		</ul>
+		<ul id='upgradePaneCol2'>
+		
+		</ul>
+	</div>
+	
+	<div id='buildingListDiv'>
+		<b>Personal Buildings:</b>
+		<ul id='buildingList'>
+			
+		</ul>
+	</div>
+	
+	<div id='eventLogDiv'>
+		<b>Event Log:</b>	
+		<ul id='eventList'>
+		
+		</ul>
+	</div>
+	
+	<table class='options'>
+		<tr><td>
+			<div class="options" onclick="saveGame()">Save Game</div>
+		</td></tr>
+		<tr><td>
+			<div class="options" onclick="loadGame()">Load Game</div>
+		</td></tr>
+	</table>
+	<!-- 
+		<tr>
+			<td><div class="stuff" onmousedown="gatherFodder('cow')" >Steal a Cow</div></td>
+			<td align='center'>Strength: <span id='currStr'>0</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><button onmousedown="secureLair()" style="width:90">Secure Lair</button></td>
+			<td><button onmousedown="lairButton()"  style="width:90">Check Lair</button></td>
+			<td><div class="stuff"><span>Button Thingy</span></div></td>
+		</tr>
+	</table> -->
+	
+	
+<script type="text/javascript" src="drgnClck.js"></script>
+</body>
+</html>
